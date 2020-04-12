@@ -1,0 +1,65 @@
+/*Welcome*/
+.main .welcome{
+    background-color: #ffffff;
+    -webkit-box-flex: 1;
+    flex: 1;
+    display:flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+} 
+.welcomeContent{
+    width: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 700px;
+    text-align: center;
+    font-size:15px;
+    
+}
+.main .welcome h2{
+    font-size: 35px;
+}
+.main .welcome .avatar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main .welcome .avatar img{
+    border-radius:50%;
+    border: 1px solid #ff0000;
+    overflow: hidden;
+    width:250px;
+    height:250px;
+   
+}
+.main .welcome input.myStatus{
+    border: 0;
+    border-bottom:1px solid #CCC;
+    width:500px;
+    text-align: center;
+    font-size:25px;
+    color: #CCC;
+}
+.main .welcome input.myStatus:focus{
+    outline: none;
+    color: #000000;
+    border-bottom:1px solid #000000;
+}
+.main .startConversation{
+    width: 300px;
+    align-self: center;
+    height: 60px;
+    font-size:25px;
+    font-weight: bold;
+    border-radius: 50px 50px 50px 50px;
+    color: #FFF;
+    background-color: #000000;
+    cursor: pointer;
+}
+.main .startConversation:focus{
+    outline: none;
+}

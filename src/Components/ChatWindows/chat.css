@@ -1,0 +1,150 @@
+.chatWindow{
+    display:flex;
+    flex-direction:column;
+    height: 100%;
+    flex: 1;
+}
+/*Chat header*/
+.chatWindow .chatHeader{
+    display:flex;
+    flex-direction:row;
+    height:50px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    color:#8a8d91;
+    box-sizing: border-box;
+}
+
+.chatWindow .chatHeader .chatActivity{
+    display:flex;
+    flex-direction:row;
+    width: 100px;
+    justify-content:space-between;
+}
+.chatWindow .chatHeader .chatActivity div{
+    cursor: pointer;
+}
+.chatWindow .chatHeader .chatActivity > div:hover,
+.chatWindow .chatHeader .chatInfomation > div:hover{
+    color: #000000;;
+}
+.chatWindow .chatHeader .chatName{
+    flex: 1;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;;
+
+}
+
+.chatWindow .chatHeader .chatInfomation{
+    display:flex;
+    flex-direction:row;
+    width: 50px;
+}
+
+/*End chat header*/
+/*chatContent*/
+.chatWindow .chatContent{
+    flex: 1;
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content: center;
+    display:flex;
+    overflow-y: auto;
+} 
+
+.chatWindow .chatContent .chatHistories{
+    width: 100%;
+    max-width: 900px;
+    height: 100%;  
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.chatWindow .chatContent .chatHistories .chatItem{
+    /* display: block; */
+    margin-bottom: 5px;
+}
+
+.chatWindow .chatContent .chatHistories .chatItem span{
+    background-color: #f2f6f9;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    line-height: 36px;
+    max-width: 450px;
+    float: left;
+    min-width: 50px;
+}
+
+.chatWindow .chatContent .chatHistories .chatItem span.activeUser{
+    float: right;
+    background-color: #dbf4fd;
+    max-width: 450px;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px; 
+}
+
+/*End chatContent*/
+
+/*chat footer*/
+.chatFooter{
+    height: 60px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.chatFooterContent{
+    display:flex;
+    border-radius: 40px;
+    height: 60px;
+    border: 1px solid #ccc;
+    max-width: 900px;
+    min-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f4;
+}
+.chatFooter .chatInput{
+    flex: 1;
+}
+.chatFooter input{
+    width:100%;
+    outline: none;
+    border:0px;
+    background-color: #f1f1f4;
+}
+
+.chatFooter .chatEmoji{
+    width:20px;
+    margin:0 10px;
+    color: #aaaaaa;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.chatFooter .chatSend{
+    color: #009fe5;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.chatFooter .chatMedia{
+    width:20px;
+    margin:0 10px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #aaaaaa;
+}
+/*end chat footer*/

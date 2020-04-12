@@ -1,0 +1,195 @@
+/*Side bar*/
+.main .sideBar{
+    background-color: #f0f4f8;
+    width:300px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+/* Profile */
+.main .sideBar .profile{
+    display:flex;
+    height: 40px;
+}
+
+.main .sideBar .profile .imgCircle{
+    border-radius:50%;
+    height: 36px;
+    width: 36px;
+    overflow: hidden;
+}
+
+.main .sideBar .profile .imgCircle img{
+  background: #F00;
+  width:100%;
+}
+.main .sideBar .profile .account{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    overflow: hidden;
+    padding: 5px
+}
+.main .sideBar .profile .account span:first-child{
+    font-weight: bold;
+}
+
+.main .sideBar .profile .account span:last-child{
+  font-style: italic;   
+}
+ 
+.main .sideBar .profile .setting{
+    height: 36px;
+    width: 36px;
+    position: relative;
+    cursor: pointer;
+}
+.main .sideBar .profile .setting .settingMenu{
+    position: absolute;
+    right: 0;
+    display: none;
+}
+.main .sideBar .profile .setting ul.settingMenu  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    right: 0;
+    background-color: #f1f1f1;
+    border: 1px solid #555;
+  }
+  
+  .main .sideBar .profile .setting ul.settingMenu li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .main .sideBar .profile .setting ul.settingMenu li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+  }
+  
+  .main .sideBar .profile .setting ul.settingMenu li:last-child {
+    border-bottom: none;
+  }
+  
+  /* .main .sideBar .profile .setting ul.settingMenu li a.active {
+    background-color: #4CAF50;
+    color: white;
+  } */
+  
+  .main .sideBar .profile .setting ul.settingMenu li a:hover{ /*:not(.active) */
+    background-color: #555;
+    color: white;
+  }
+
+/* End Profile */
+/*contact*/
+.main .sideBar .contacts{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+}
+.main .sideBar .contacts .contactList
+{
+    display:flex;
+    flex-direction: column;
+    cursor: pointer;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.main .sideBar .contacts .contactList .contactItem
+{
+    display:flex;
+    flex-direction: row;
+    /* border-bottom: 1px solid #ccc; */
+    padding-top:10px;
+    padding-bottom:10px;
+    cursor: pointer;
+}
+.main .sideBar .contacts .contactList .contactItem:last-child
+{
+    margin-bottom: 100px;
+}
+
+.main .sideBar .contacts .contactList .contactItem img
+{
+    border-radius:50%;
+    height: 36px;
+    width: 36px;
+    overflow: hidden;
+}
+.main .sideBar .contacts .contactList .contactItem .contactInfo 
+{
+    display:flex;
+    flex-direction: column;
+    padding-left: 5px;
+    overflow: hidden;
+    line-height: 20px;
+    height:40px;
+    flex: 1;
+}
+
+.main .sideBar .contacts .contactList .contactItem .contactInfo span:first-child
+{
+    font-weight:bold;
+}
+.lastSentMessage{
+    width: 60px;
+}
+/*end contact*/
+
+/* Conversation*/
+.main .sideBar .conversation
+{
+   display:flex;
+   justify-content:space-around;
+   flex-direction: row;
+   width: 100%;
+   height: 40px;
+}
+
+.main .sideBar .newMeetup,
+.main .sideBar .newChat
+{
+   width: 120px;
+   background-color: #ffffff;
+   height: 100%;
+   border-radius: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0px 10px;
+   cursor: pointer;
+}
+.main .sideBar .newMeetup span,
+.main .sideBar .newChat span
+{
+  margin-left: 10px;
+}
+/* End Conversation*/
+
+/* Search */
+.main .sideBar .search{
+    padding: 5px 10px 10px 0px;
+   
+}
+.main .sideBar .search input{
+    width: 100%;
+    border-radius: 5px;
+    height: 28px;
+    padding: 5px 0 5px 5px;
+    border: 1px #ccc solid;
+    line-height: 35;
+    box-sizing: border-box;
+}
+.main .sideBar .search input:focus{
+    outline: none;
+    color: #000000;
+    border-bottom:1px solid #000000;
+}
+/* Search */
